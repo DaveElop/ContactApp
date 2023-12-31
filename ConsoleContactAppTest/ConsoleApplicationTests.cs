@@ -29,7 +29,6 @@ namespace ConsoleApp.Tests
                 // Assert
                 menuServiceMock.Verify(m => m.DisplayMenu(), Times.Once);
                 menuServiceMock.Verify(m => m.GetSelectedOption(), Times.Once);
-                // You may add more assertions based on the expected behavior when the user chooses the Exit option
             }
         }
 

@@ -9,7 +9,7 @@ namespace MenuServices.Tests
         public void GetSelectedOption_ShouldReturnValidOption_WhenUserInputsValidOption()
         {
             // Arrange
-            var mockConsoleInput = "3\n"; // Simulating user input "3"
+            var mockConsoleInput = "3\n";
             var menuService = new MenuService();
 
             using (var stringReader = new StringReader(mockConsoleInput))
@@ -28,7 +28,7 @@ namespace MenuServices.Tests
         public void GetSelectedOption_ShouldRetry_WhenUserInputsInvalidOptionThenValidOption()
         {
             // Arrange
-            var mockConsoleInput = "invalid\n3\n"; // Simulating user input "invalid" and then "3"
+            var mockConsoleInput = "invalid\n3\n";
             var menuService = new MenuService();
 
             using (var stringReader = new StringReader(mockConsoleInput))

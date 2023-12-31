@@ -2,7 +2,6 @@
 
 public class MenuService : IMenuService
 {
-    private bool AllowCancel { get; set; } = false;
 
     public void DisplayMenu()
     {

@@ -76,7 +76,7 @@ namespace ContactServices.Tests
 
             // Assert
             var remainingContacts = contactService.GetAllContacts();
-            Assert.Single(remainingContacts); // Ensure only one contact remains
+            Assert.Single(remainingContacts);
             Assert.Equal("another@example.com", remainingContacts[0].Email);
 
             fileServiceMock.Verify(fs => fs.SaveContacts(remainingContacts), Times.Once);
